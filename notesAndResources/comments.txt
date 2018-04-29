@@ -1,0 +1,91 @@
+// router.post('/login' , function(req , res) {
+//     User.findOne({email: req.body.email})
+//    .exec()
+//    .then(function(user) {
+    //   bcrypt.compare(req.body.password, user.password, function(err, result){
+    //      if(err) {
+    //         return res.status(401).json({
+    //            failed: 'Unauthorized Access'
+    //         });
+//          }
+//          if(result) {
+//             const JWTToken = jwt.sign({
+//                 email: user.email,
+//                 _id  : user._id 
+//             },'key.key' , {
+//                 expiresIn: '2h'
+//             });
+
+//             return res.status(200).json({
+//                 success: 'Welcome to the JWT Auth',
+//                 token: JWTToken
+//               });
+
+//          }
+//          return res.status(401).json({
+//             failed: 'Unauthorized Access'
+//          });
+//       });
+//    })
+//    .catch(error => {
+//       res.status(500).json({
+//          error: error
+//       });
+//    });
+
+
+// });
+
+
+
+
+
+
+// router.post('/signup' , function(req , res) {
+//     User.findOne({email : req.body.email})
+//     .exec()
+//     .then(function(user){
+//         if(user==null){
+//             bcrypt.hash(req.body.password , 10 , function(err , hash){
+//                 if(err){
+//                     return res.status(500).json({
+//                         error: err
+//                      });
+//                 }else{
+//                     req.body.password=hash;
+//                     User.create(req.body).then(function(user){
+//                                  res.send(`succesfully sign up ${req.body.email}`);
+//                              });
+ 
+//                 }
+//             });
+            
+//         }
+//         if(user){
+//             res.send('user is exist');
+           
+//         }
+//     });
+// });
+
+// router.post('/save' , function(req , res) {
+//     User.create(req.body).then(function(ninja){
+//         res.send(ninja);
+//     });
+    
+// });
+
+// bcrypt.hash(req.body.password , 10 , function(err , hash){
+//     if(err){
+//         console.log('Password hashing error');
+//         return res.status(500).json({error :err
+//         });
+//     }
+//     else{
+        
+//     }
+
+
+
+// });
+

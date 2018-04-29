@@ -1,0 +1,69 @@
+
+// router.post('/login', function (req, res, ) {
+
+//             User.findOne({
+//                         email: req.body.email
+//                     }, (err, user) => {
+//                         if (err) throw err;
+//                         if (!user) {
+//                             res.json({
+//                                 success: false,
+//                                 message: 'User is not found'
+//                             });
+//                             console.log(user);
+//                         } else if (user) {
+                            // bcrypt.hash(req.body.password, 10, function (err, hash) {
+                            //         if (err) {
+                            //             console.log("error");
+                            //         }
+                            //         if (hash == user.password) {
+                            //             console.log("gelapuna");
+                            //         }
+                            //     }
+
+
+
+//                             });
+
+
+
+
+
+
+
+// bcrypt.compare(req.body.password, user.password, function(err, res) {
+//     if(err)
+
+// });
+
+// const JWTToken = jwt.sign({email: user.email} ,key.key,{expiresIn:'24h'});
+
+//     res.json({
+//             success: true,
+//             message: 'This is token',
+//             token: JWTToken
+//           });
+
+///////
+//             //console.log(user + "asdfasdfasdfasdf");
+//             bcrypt.compare(req.body.password, user.password, function(err, result){
+//                 if (err) throw err ;
+//                 if (result==true){
+//                     //TODO send the webtoken 
+//                     const JWTToken = jwt.sign({email: user.email} ,'key.key',{expiresIn:'24h'});
+//                     res.json({
+// success: true,
+// message: 'This is token',
+// token: JWTToken
+//                       });                                             
+//                 }
+//                 if(result==false){
+//                     res.json({success : false , message : 'The entered paasword is not match'});
+//                     console.log(result);
+//                     console.log(user.password);
+//                 }
+
+//         }
+
+// );
+
